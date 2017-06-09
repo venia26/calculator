@@ -1,0 +1,56 @@
+﻿<html>
+<head><title>Калькулятор</title>
+
+<script language="JavaScript">
+
+function addIt() {
+	var value1 = Number(document.getElementById("inputA").value);
+	var value2 = Number(document.getElementById("inputB").value);
+document.getElementById("output").value = value1 + value2;
+}
+		function subtr() {
+			var value3 = Number(document.getElementById("inputC").value);
+			var value4 = Number(document.getElementById("inputD").value);
+		document.getElementById("derivation").value = value3 - value4;
+		}
+						function divi() {
+							var value3 = Number(document.getElementById("inputE").value);
+							var value4 = Number(document.getElementById("inputF").value);
+						document.getElementById("pin").value = value3 / value4;
+						}
+								function multi() {
+									var value3 = Number(document.getElementById("inputJ").value);
+									var value4 = Number(document.getElementById("inputQ").value);
+								document.getElementById("inference").value = value3 * value4;
+								}
+</script>
+
+</head>
+<body>
+<form name="adder">
+	<input type="text" name="inputA" id="inputA" value="0" size="4" /><br />
+	<input type="text" name="inputB" id="inputB" value="0" size="4" />
+	<input type="button" value="+" onclick="addIt()">
+	<input type="text" name="output" id="output" size="6" />
+</form>
+
+		<form name="subtrac">
+			<input type="text" name="inputC" id="inputC" value="0" size="4" /><br />
+			<input type="text" name="inputD" id="inputD" value="0" size="4" />
+			<input type="button" value="-" onclick="subtr()">
+			<input type="text" name="derivation" id="derivation" size="6" />
+		</form>
+				<form name="divide">
+					<input type="text" name="inputE" id="inputE" value="0" size="4" /><br />
+					<input type="text" name="inputF" id="inputF" value="0" size="4" />
+					<input type="button" value="/" onclick="divi()">
+					<input type="text" name="pin" id="pin" size="6" />
+				</form>
+						<form name="multiply">
+							<input type="text" name="inputJ" id="inputJ" value="0" size="4" /><br />
+							<input type="text" name="inputQ" id="inputQ" value="0" size="4" />
+							<input type="button" value="*" onclick="multi()">
+							<input type="text" name="inference" id="inference" size="6" />
+						</form>
+</body>
+</html>
