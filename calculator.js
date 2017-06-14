@@ -1,3 +1,4 @@
-﻿//function addition (2,2) {
-  // var result = 0;
-//console.log(result) }
+﻿function addition (2,2) {
+   var result = a+b
+   console.log(result);
+}
